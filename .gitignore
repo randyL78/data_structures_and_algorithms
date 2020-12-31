@@ -1,0 +1,5 @@
+**/.idea
+**/*.out
+**/*.xml
+**/cmake-build-debug/*
+**/CMakeLists.txt
