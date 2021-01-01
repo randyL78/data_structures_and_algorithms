@@ -1,11 +1,11 @@
 #include <iostream>
 
-#include "Vector.h"
-
+#include "adt.h"
+#include "alg.h"
 
 // create driver for different samples
 int main() {
-    Vector<int> *numbers = new Vector<int>();
+    adt::Vector<int> *numbers = new adt::Vector<int>();
 
     std::cout << "Size: " << numbers->size() << "\n";
     numbers->push_back(23);
