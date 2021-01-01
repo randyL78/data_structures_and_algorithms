@@ -1,3 +1,5 @@
+[Home]()
+
 # Data Structures and Algorithms
 
 Listings for common algorithms in various languages such as C, C++, 
@@ -17,7 +19,8 @@ that directory.
 
 ## Data Structures
 
-* Vectors
+* [Vectors](vectors/README.md)
+* Lists
 * Queues
 * Heaps
 
