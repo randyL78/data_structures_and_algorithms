@@ -1,4 +1,4 @@
-[Home]()
+[Home](./README.md)
 
 # Data Structures and Algorithms
 
