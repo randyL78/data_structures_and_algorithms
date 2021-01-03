@@ -7,26 +7,28 @@
 
 namespace alg
 {
-    namespace sort
-    {
+    namespace sort {
         template<typename Iterator, typename Comparator>
-        void insertionSort(const Iterator & begin,
-                           const Iterator & end,
-                           Comparator lessThan)
-        {
-            if(begin == end) return;
+        void insertionSort(const Iterator &begin,
+                           const Iterator &end,
+                           Comparator lessThan) {
+            if (begin == end) return;
 
             Iterator i;
 
-            for (Iterator p = begin + 1; p != end; ++p)
-            {
+            for (Iterator p = begin + 1; p != end; ++p) {
                 auto temp = std::move(*p);
 
-                for (i = p; i != begin && lessThan(temp, *(i-1)); --i)
+                for (i = p; i != begin && lessThan(temp, *(i - 1)); --i)
                     *i = std::move(*(i - 1));
 
                 *i = std::move(temp);
             }
+        }
+
+        template<typename Iterator>
+        void insertionSort(const Iterator &begin, const Iterator &end) {
+            insertionSort(begin, end, std::less<decltype(*begin)>{});
         }
     }
 }

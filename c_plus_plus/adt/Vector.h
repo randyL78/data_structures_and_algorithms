@@ -108,11 +108,11 @@ namespace adt {
         }
 
         iterator end() {
-            return &objects[size() - 1];
+            return &objects[size()];
         }
 
         const_iterator end() const {
-            return &objects[size() - 1];
+            return &objects[size()];
         }
 
         static const int SPARE_CAPACITY = 16;

@@ -28,6 +28,6 @@ that directory.
 
 ### Sorting
 
-* Insertion Sort
+* [Insertion Sort](sorting/insertion_sort/README.md)
 * Merge Sort
 * Quicksort
