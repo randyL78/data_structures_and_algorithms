@@ -30,6 +30,11 @@ namespace alg
         void insertionSort(const Iterator &begin, const Iterator &end) {
             insertionSort(begin, end, std::less<decltype(*begin)>{});
         }
+
+        template<typename Container>
+        void insertionSort(Container &c) {
+            insertionSort(c.begin(), c.end());
+        }
     }
 }
 

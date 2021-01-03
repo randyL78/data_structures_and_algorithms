@@ -8,7 +8,6 @@
 int main() {
     adt::Vector<int> numbers;
 
-
     numbers.push_back(23);
     numbers.push_back(87);
     numbers.push_back(12);
@@ -19,9 +18,14 @@ int main() {
 
     print(numbers);
 
-    alg::sort::insertionSort(numbers.begin(), numbers.end());
+    adt::Vector<int> numbers2;
+    numbers2 = numbers;
+
+    alg::sort::insertionSort(numbers);
+    alg::sort::merge_sort(numbers2);
 
     print(numbers);
+    print(numbers2);
 
     return 0;
 }
