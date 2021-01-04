@@ -19,6 +19,7 @@ A permutation _{a'<sub>1</sub>, a'<sub>2</sub> ... a'<sub>n</sub>}_ such that _a
 ### Pseudocode
 
 ```C++
+// A = array or list to process
 for j = 2 to A.length
   key = A[j]
   // Insert A[j] into the sorted sequence A[1..j - 1]
